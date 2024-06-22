@@ -1,0 +1,466 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+body {
+    font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+h1 {
+    font-weight:300;
+    line-height: 1.15em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+a:link,a:visited {
+    color: #1367a7;
+    text-decoration: none;
+}
+a:hover {
+    color: #208799;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+h2 {
+    font-weight: 400;
+    margin: 16px 0px 4px 0px;
+}
+.paper-title {
+    padding: 16px 0px 16px 0px;
+}
+section {
+    margin: 32px 0px 32px 0px;
+    text-align: justify;
+    clear: both;
+}
+.col-6 {
+     width: 16.6%;
+     float: left;
+}
+.col-5 {
+     width: 20%;
+     float: left;
+}
+.col-4 {
+     width: 25%;
+     float: left;
+}
+.col-3 {
+     width: 33%;
+     float: left;
+}
+.col-2 {
+     width: 50%;
+     float: left;
+}
+.row, .author-row, .affil-row {
+     overflow: auto;
+}
+.author-row, .affil-row {
+    font-size: 20px;
+}
+.row {
+    margin: 16px 0px 16px 0px;
+}
+.authors {
+    font-size: 18px;
+}
+.affil-row {
+    margin-top: 16px;
+}
+.teaser {
+    max-width: 100%;
+}
+.text-center {
+    text-align: center;  
+}
+.screenshot {
+    width: 256px;
+    border: 1px solid #ddd;
+}
+.screenshot-el {
+    margin-bottom: 16px;
+}
+hr {
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #ddd;
+    margin: 0;
+}
+.material-icons {
+    vertical-align: -6px;
+}
+p {
+    line-height: 1.25em;
+}
+.caption {
+    font-size: 16px;
+    /*font-style: italic;*/
+    color: #666;
+    text-align: left;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+video {
+    display: block;
+    margin: auto;
+}
+figure {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#bibtex pre {
+    font-size: 14px;
+    background-color: #eee;
+    padding: 16px;
+}
+.blue {
+    color: #2c82c9;
+    font-weight: bold;
+}
+.orange {
+    color: #d35400;
+    font-weight: bold;
+}
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.paper-btn {
+  position: relative;
+  text-align: center;
+
+  display: inline-block;
+  margin: 8px;
+  padding: 8px 8px;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  
+  background-color: #1367a7;
+  color: #ecf0f1 !important;
+  font-size: 20px;
+  width: 100px;
+  font-weight: 600;
+}
+
+.supp-btn {
+  position: relative;
+  text-align: center;
+
+  display: inline-block;
+  margin: 8px;
+  padding: 8px 8px;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  
+  background-color: #1367a7;
+  color: #ecf0f1 !important;
+  font-size: 20px;
+  width: 150px;
+  font-weight: 600;
+}
+
+.paper-btn-parent {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0px;
+}
+.paper-btn:hover {
+    opacity: 0.85;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.venue {
+    color: #1367a7;
+}
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #EEEEEE;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+
+</style>
+
+
+<div class="topnav" id="myTopnav">
+
+</div>
+
+
+<!-- End : Google Analytics Code -->
+<script type="text/javascript" src="../js/hidebib.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+<head>
+    <title>MVOC: a training-free multiple video object composition method with diffusion models</title>
+    <meta property="og:description" content="MVOC: a training-free multiple video object composition method with diffusion models"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6HHDEXF452"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6HHDEXF452');
+</script>
+
+</head>
+
+
+ <body>
+<div class="container">
+    <div class="paper-title">
+      <h1>MVOC: a training-free multiple video object composition method with diffusion models</h1>
+    </div>
+
+    
+    <div id="authors">
+        <div class="author-row">
+            <div class="col-5 text-center"><a href="https://scholar.google.com.hk/citations?user=tfJVFEcAAAAJ&hl=zh-CN">Wei Wang</a><sup>1</sup></div>
+            <div class="col-5 text-center"><a href="https://scholar.google.com.hk/citations?user=HvWZhM4AAAAJ&hl=zh-CN">Yaosen Chen*</a><sup>1,2</sup></div>
+            <div class="col-5 text-center">Yuegen Liu</a><sup>1</sup></div>
+            <div class="col-5 text-center">Qi Yuan</a><sup>1</sup></div>
+            <div class="col-5 text-center">Shubin Yang</a><sup>1,2</sup></div>
+            <div class="col-5 text-center">Yanru Zhang</a><sup>2</sup></div>
+        </div>
+
+        <div class="affil-row">
+            <div class="col-8 text-center"><sup>2</sup>Sobey Media Intelligence Laboratory</a></div>
+            <div class="col-8 text-center"><sup>1</sup>University of Electronic Science and Technology of China</a></div>
+        </div>
+
+        <p class="caption">
+            *Corresponding Author is Yaosen Chen.
+        </p>
+
+
+        <div style="clear: both">
+            <div class="paper-btn-parent">
+            <a class="supp-btn" href="https://browse.arxiv.org/pdf/2310.05720.pdf">
+                <span class="material-icons"> description </span> 
+                 Paper
+            </a>
+
+            <a class="supp-btn" href="https://github.com/SobeyMIL/MVOC">
+                <span class="material-icons"> description </span> 
+                  Code
+            </a>
+        </div></div>
+    </div>
+
+
+    <section id="paper">
+        <h2>Paper</h2>
+        <hr>
+        <div class="flex-row">
+            <div style="box-sizing: border-box; padding: 16px; margin: auto;">
+                <a href="assets/upstnerf.pdf"><img class="screenshot" src="paper.png"></a>
+            </div>
+            <div style="width: 50%">
+                <p><b>MVOC: a training-free multiple video object composition method with diffusion models</b></p>
+                <p>Wei Wang, Yaosen Chen, Yuegen Liu, Qi Yuan, Shubin Yang, Yanru Zhang</p>
+
+                
+                <div><span class="material-icons"> description </span><a href="https://arxiv.org/abs/2310.05720"> arXiv version</a></div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="teaser" class="flex-row">
+            <a href="mvoc_intro.png" style="text-align: center;">
+                <img width="100%" src="mvoc_intro.png" >
+            </a>
+        <p class="caption">
+             Given multiple video objects (e.g. Background, Object1, Object2),  our method enables presenting the interaction effects between multiple video objects and maintaining the motion and identity consistency of each object in the composited video.
+        </p>
+    </section>
+    
+
+    <section id="abstract"/>
+        <h2>Abstract</h2>
+        <hr>
+
+        <p>Video composition is the core task of video editing. Although image composition based on diffusion models has been highly successful, it is not straightforward to extend the achievement to video object composition tasks, which not only exhibit corresponding interaction effects but also ensure that the objects in the composited video maintain motion and identity consistency, which is necessary to composite a physical harmony video. To address this challenge, we propose a Multiple Video Object Composition (MVOC) method based on diffusion models. Specifically, we first perform DDIM inversion on each video object to obtain the corresponding noise features. Secondly, we combine and edit each object by image editing methods to obtain the first frame of the composited video. Finally, we use the image-to-video generation model to composite the video with feature and attention injections in the Video Object Dependence Module, which is a training-free conditional guidance operation for video generation, and enables the coordination of features and attention maps between various objects that can be non-independent in the composited video. The final generative model not only constrains the objects in the generated video to be consistent with the original object motions and identities, but also introduces interaction effects between objects. Extensive experiments have demonstrated that the proposed method outperforms existing state-of-the-art approaches.
+            </p>
+    </section>
+
+
+    <section id="method"/>
+        <h2>Approach</h2>
+<hr>
+
+    <section id="teaser" class="flex-row">
+            <a href="mvoc_framework.png" style="text-align: center;">
+                <img width="90%" src="mvoc_framework.png" >
+            </a>
+        <p class="caption">
+            <strong>Multiple video object composition framework.</strong> Our method presents a two-stage approach: video object preprocessing and generative video editing. In preprocessing stage, we perform DDIM inversion, object extraction and paste, mask extraction and first frame editing. In editing stage, we edit the first frame by an image editing model, then use video object dependence for conditional guidance video generation
+        </p>
+    </section>
+    </section>
+
+
+
+    <section id="method"/>
+        <h2>Comparison</h2>
+<hr>
+
+    <section id="BirdSeal" class="flex-row">
+            <a href="BirdSeal.gif" style="text-align: center;">
+                <img width="90%" src="BirdSeal.gif"  >
+            </a>
+        <p class="caption">
+            <strong>Comparison on BirdSeal.</strong> 
+        </p>
+    </section>
+
+    <section id="BoatSurf" class="flex-row">
+            <a href="BoatSurf.gif" style="text-align: center;">
+                <img width="90%" src="BoatSurf.gif"  >
+            </a>
+        <p class="caption">
+            <strong>Comparison on BoatSurf.</strong> 
+        </p>
+    </section>
+
+
+    <section id="MonkeySwan" class="flex-row">
+            <a href="MonkeySwan.gif" style="text-align: center;">
+                <img width="90%" src="MonkeySwan.gif"  >
+            </a>
+        <p class="caption">
+            <strong>Comparison on MonkeySwan.</strong> 
+        </p>
+    </section>
+<section id="DuckCrane" class="flex-row">
+            <a href="DuckCrane.gif" style="text-align: center;">
+                <img width="90%" src="DuckCrane.gif"  >
+            </a>
+        <p class="caption">
+            <strong>Comparison on DuckCrane.</strong> 
+        </p>
+    </section>
+
+    <section id="RobotCat" class="flex-row">
+            <a href="RobotCat.gif" style="text-align: center;">
+                <img width="90%" src="RobotCat.gif"  >
+            </a>
+        <p class="caption">
+            <strong>Comparison on RobotCat.</strong> 
+        </p>
+    </section>
+
+    <section id="CraneSeal" class="flex-row">
+            <a href="CraneSeal.gif" style="text-align: center;">
+                <img width="90%" src="CraneSeal.gif"  >
+            </a>
+        <p class="caption">
+            <strong>Comparison on CraneSeal.</strong> 
+        </p>
+    </section>
+
+
+    <section id="RiderDeer" class="flex-row">
+            <a href="RiderDeer.gif" style="text-align: center;">
+                <img width="90%" src="RiderDeer.gif"  >
+            </a>
+        <p class="caption">
+            <strong>Comparison on RiderDeer.</strong> 
+        </p>
+    </section>
+
+    </section>
+
+
+
+
+<hr>
+
+   <section id="Consistency">
+        <h2> Quantitative Comparison</h2>
+
+    <section id="teaser" class="flex-row">
+            <a href="QuantitativeComparison.png" style="text-align: center;">
+                <img width="60%" src="QuantitativeComparison.png" >
+            </a>
+        <p class="caption">
+            <strong>The comparisons of short and long-range consistency are shown in Table.1 and  Table.2, respectively.</strong>  CutPaste, Poisson, and Harmonizer are non-generative methods, which essentially have better temporal consistency, but cannot produce interactive effects and are not harmonious; others and our method are generative methods, and the compositied videos are more harmonious.  Nonetheless, the average of our metrics on temporal consistency is still superior all compared methods.
+        </p>
+    </section>
+
+    </section>
+    
+
+
+
+   
+
+
+
+
+
+</code></pre>
+    </section>
+
+<br />
+    
+
+    <section id="bibtex">
+        <h2>Citation</h2>
+        <hr>
+        <pre><code>
+        @inproceedings{chen2023HyperLips,
+        title = {MVOC: a training-free multiple video object composition method with diffusion models},
+        author = {Wei Wang and Yaosen Chen and Yuegen Liu and  Qi Yuan and  Shubin Yang and  Yanru Zhang},
+        year = {2024},
+        booktitle = {arxiv}
+        }
+
+</code></pre>
+    </section>
+</div>
